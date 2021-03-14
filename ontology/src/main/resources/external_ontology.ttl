@@ -1,0 +1,5 @@
+@prefix : <__BASE_URI__/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Resource a rdfs:Class ;
+  rdfs:comment "The basic, top-level object of NVA" .

@@ -11,11 +11,6 @@ plugins {
 group 'no.unit.nva'
 version '1.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
-    jcenter()
-}
-
 allprojects {
     apply plugin: 'base'
     apply plugin: 'jacoco'
@@ -23,6 +18,10 @@ allprojects {
     apply plugin: 'pmd'
     apply plugin: 'nebula.lint'
 
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
 }
 
 subprojects {
@@ -36,6 +35,8 @@ subprojects {
     targetCompatibility = JavaVersion.VERSION_11
 
     dependencies {
+        implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.12.2'
+
         testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.0'
         testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
         testImplementation group: 'org.hamcrest', name: 'hamcrest', version: '2.2'
