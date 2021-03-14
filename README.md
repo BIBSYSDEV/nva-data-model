@@ -4,26 +4,26 @@ This is version 2 of the data model, as it entirely differs from the approach ta
 
 The data model comprises the following components:
 
-   - Data Transfer Objects (DTOs) (TODO)
-   - Data Access Objects (DAOs) (TODO)
-   - Client APIs
-     - Java client (TODO)
-     - JavaScript client (TODO)
-   - Ontological representations for:
-     - DTOs (TODO)
-     - DAOs (TODO)
-   - JSON-LD contexts for the DTOs (TODO)
+- Data Transfer Objects (DTOs) (TODO)
+- Data Access Objects (DAOs) (TODO)
+- Client APIs
+   - Java client (TODO)
+   - JavaScript client (TODO)
+- Ontological representations for:
+  - DTOs (TODO)
+  - DAOs (TODO)
+  - JSON-LD contexts for the DTOs (TODO)
 
 ## Working with the data model
 
 The main point-of-reference for users of the data model is the DTOs; the client APIs simplify working with these.
 
 The clients can be used via maven/gradle (Java) and npm (JavaScript):
-  - gradle: 
+- gradle: 
     ```TODO```
-  - maven:
+- maven:
     ```TODO```
-  - npm:
+- npm:
     ```TODO```
 
 The DTOs are objects exposed between services, the DAOs are used solely internally in NVA when accessing persisted objects.
@@ -47,13 +47,13 @@ We use [gradle](https://gradle.org/) as the build system, you should use the gra
 The main code is the latest [LTS Java supported by AWS](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html), this is because the code is designed to be deployed in standard AWS-managed runtimes.
 
 The code is separated into modules:
+- ontology
   - ontology
-    - ontology
-    - JSON-LD contexts  
-  - external (DTOs, Java)
-  - internal (DAOs, Java)
-  - client (Java client)
-  - client-js (JavaScript)
+  - JSON-LD contexts
+- external (DTOs, Java)
+- internal (DAOs, Java)
+- client (Java client)
+- client-js (JavaScript)
 
 Static analysis via [checkstyle](https://checkstyle.sourceforge.io/) and [PMD](https://pmd.github.io/) ensure that the Java code conforms with NVA expectations, the project will *not* build if this is not the case.
 
