@@ -16,7 +16,7 @@ public class MappingTest {
     public static final int EMPTY = 0;
 
     @Test
-    void mainTitleIsRoundTrippedBetweenExternalAndInternalModel() {
+    void dtoIsRoundTrippedBetweenExternalAndInternalModel() {
         var external = new ResourceDto(URI.create(ANY_HTTPS_URI));
         var internal = new ResourceDao(external);
         var actual = internal.asDto();
