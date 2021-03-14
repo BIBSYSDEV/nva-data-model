@@ -10,13 +10,13 @@ The data model comprises the following components:
 -   Data Access Objects (DAOs) (TODO)
 
 -   Client APIs
-    - Java client (TODO)
-    - JavaScript client (TODO)
+    -   Java client (TODO)
+    -   JavaScript client (TODO)
 
 -   Ontological representations for:
-    - DTOs (TODO)
-    - DAOs (TODO)
-    - JSON-LD contexts for the DTOs (TODO)
+    -   DTOs (TODO)
+    -   DAOs (TODO)
+    -   JSON-LD contexts for the DTOs (TODO)
 
 ## Working with the data model
 
@@ -24,9 +24,9 @@ The main point-of-reference for users of the data model is the DTOs; the client
 APIs simplify working with these.
 
 The clients can be used via maven/gradle (Java) and npm (JavaScript):
-- gradle: ```shell TODO```
-- maven: ```shell TODO```
-- npm: ```shell TODO```
+-   gradle: ```shell TODO```
+-   maven: ```shell TODO```
+-   npm: ```shell TODO```
 
 The DTOs are objects exposed between services, the DAOs are used solely 
 internally in NVA when accessing persisted objects.
@@ -55,8 +55,8 @@ runtimes.
 
 The code is separated into modules:
 -   ontology
-    - ontology
-    - JSON-LD contexts
+    -   ontology
+    -   JSON-LD contexts
 
 -   external (DTOs, Java)
 
