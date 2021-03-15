@@ -11,8 +11,12 @@ plugins {
 group 'no.unit.nva'
 version '1.0-SNAPSHOT'
 
-allprojects {
+repositories {
+    mavenCentral()
+    jcenter()
+}
 
+allprojects {
     apply plugin: 'base'
     apply plugin: 'jacoco'
     apply plugin: 'checkstyle'
