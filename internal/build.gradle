@@ -1,22 +1,7 @@
-plugins {
-    id 'java'
-}
-
-group 'no.unit.nva.model'
-version '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     def slf4jVersion = '1.7.30'
 
     implementation project(':external')
     testImplementation group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
     testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: slf4jVersion
-}
-
-test {
-    useJUnitPlatform()
 }
