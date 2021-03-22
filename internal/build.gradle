@@ -2,6 +2,7 @@ dependencies {
     def slf4jVersion = '1.7.30'
 
     implementation project(':external')
+    implementation group: 'com.github.bibsysdev', name: 'core', version: project.ext.nvaCommonsVersion
     testImplementation group: 'org.slf4j', name: 'slf4j-api', version: slf4jVersion
     testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: slf4jVersion
 }

@@ -1,0 +1,11 @@
+group 'no.unit.nva.model'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    def jenaVersion = '3.17.0'
+    implementation project(':external')
+    implementation project(':internal')
+    implementation group: 'org.apache.jena', name: 'jena-core', version: jenaVersion
+    implementation group: 'org.apache.jena', name: 'jena-arq', version: jenaVersion
+}
+

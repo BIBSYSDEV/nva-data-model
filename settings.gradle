@@ -1,5 +1,6 @@
 rootProject.name = 'nva-data-model'
 include 'external'
-include 'external'
 include 'internal'
+include 'ontology'
+include 'client'
 
